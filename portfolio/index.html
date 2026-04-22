@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shrutika Kadam | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">Shrutika<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="assets/resume.pdf" download class="nav-cta">Resume</a>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobile()"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#experience" onclick="closeMobile()">Experience</a></li>
+      <li><a href="#education" onclick="closeMobile()">Education</a></li>
+      <li><a href="#certifications" onclick="closeMobile()">Certifications</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-section" id="home">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-orb orb3"></div>
+    <div class="hero">
+
+    <div class="hero-content">
+      <p class="hero-hi">Hi, I'm</p>
+      <h1 class="hero-name">Shrutika Rajendra<br>Kadam</h1>
+      <p class="hero-subtitle">Computer Science Student &bull; Frontend Developer</p>
+      <p class="hero-desc">I build clean, responsive web experiences and like turning ideas into real, working products.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-ghost">Contact Me</a>
+      </div>
+    </div>
+
+    <!-- Profile photo replacing the SVG illustration -->
+    <div class="hero-visual">
+      <div class="profile-photo-wrap">
+        <div class="photo-bg-ring ring-outer"></div>
+        <div class="photo-bg-ring ring-inner"></div>
+        <div class="photo-container">
+          <img src="assets/profile.png" alt="Shrutika Kadam" class="profile-photo" />
+        </div>
+        <div class="photo-badge badge-html"><i class="fab fa-html5"></i> HTML/CSS</div>
+        <div class="photo-badge badge-js"><i class="fab fa-js-square"></i> JavaScript</div>
+        <div class="photo-badge badge-py"><i class="fab fa-python"></i> Python</div>
+      </div>
+    </div>
+
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About</span>
+        <h2>About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <p>I'm a B.Tech Computer Science student at RIT Sangli with a strong academic record and a practical, product-focused mindset. I enjoy web development, software engineering, and building solutions that are clean, reliable, and user-friendly.</p>
+          <p>I'm comfortable working across the frontend stack — from structuring pages with HTML &amp; CSS to adding interactivity with JavaScript and building lightweight backends with Flask.</p>
+          <a href="#skills" class="inline-link">Explore Skills <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="about-card glass reveal">
+          <h3>Strengths</h3>
+          <div class="strengths-list">
+            <div class="strength-item">
+              <i class="fas fa-code"></i>
+              <div>
+                <strong>Frontend Development</strong>
+                <p>Building responsive, well-structured web interfaces using HTML, CSS, and JavaScript.</p>
+              </div>
+            </div>
+            <div class="strength-item">
+              <i class="fas fa-layer-group"></i>
+              <div>
+                <strong>Core CS Foundations</strong>
+                <p>Strong grounding in DSA, DBMS, OS, and software engineering principles.</p>
+              </div>
+            </div>
+          </div>
+          <div class="open-badge">Open to internships &amp; placement opportunities.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills</span>
+      </div>
+
+      <div class="skills-category reveal">
+        <h4 class="skills-cat-label">Languages</h4>
+        <div class="skills-grid">
+          <div class="skill-card glass"><div class="skill-icon"><i class="fab fa-html5"></i></div><h5>HTML</h5></div>
+          <div class="skill-card glass"><div class="skill-icon"><i class="fab fa-css3-alt"></i></div><h5>CSS</h5></div>
+          <div class="skill-card glass"><div class="skill-icon"><i class="fab fa-js-square"></i></div><h5>JavaScript</h5></div>
+          <div class="skill-card glass"><div class="skill-icon"><i class="fab fa-python"></i></div><h5>Python</h5></div>
+          <div class="skill-card glass"><div class="skill-icon"><i class="fab fa-java"></i></div><h5>Java</h5></div>
+          <div class="skill-card glass"><div class="skill-icon"><i class="fas fa-copyright"></i></div><h5>C</h5></div>
+        </div>
+      </div>
+
+      <div class="skills-category reveal">
+        <h4 class="skills-cat-label">Frameworks &amp; Tools</h4>
+        <div class="skills-grid">
+          <div class="skill-card glass"><div class="skill-icon"><i class="fas fa-code"></i></div><h5>VS Code</h5></div>
+          <div class="skill-card glass"><div class="skill-icon"><i class="fas fa-flask"></i></div><h5>Flask</h5></div>
+          <div class="skill-card glass"><div class="skill-icon"><i class="fab fa-github"></i></div><h5>Git &amp; GitHub</h5></div>
+          <div class="skill-card glass"><div class="skill-icon"><i class="fab fa-figma"></i></div><h5>Figma</h5></div>
+        </div>
+      </div>
+
+      <div class="skills-category reveal">
+        <h4 class="skills-cat-label">Core CS Subjects</h4>
+        <div class="subject-chips-row">
+          <span><i class="fas fa-server"></i>Operating Systems</span>
+          <span><i class="fas fa-database"></i>DBMS</span>
+          <span><i class="fas fa-sitemap"></i>DSA</span>
+          <span><i class="fas fa-microchip"></i>Digital Electronics</span>
+          <span><i class="fas fa-diagram-project"></i>Software Engineering</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projects</span>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass reveal" onclick="openModal('modal4')">
+          <div class="project-tag-label">Web</div>
+          <h3>CampusSwap</h3>
+          <p>A student marketplace to buy/sell products with a smooth, mobile-first interface.</p>
+          <ul class="proj-features">
+            <li>Auth + listings flow</li>
+            <li>Clean UI &amp; UX</li>
+            <li>Realtime-ready structure</li>
+          </ul>
+          <div class="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span></div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+
+        <div class="project-card glass reveal" onclick="openModal('modal1')">
+          <div class="project-tag-label">Maps</div>
+          <h3>EcoTrap</h3>
+          <p>Map-based pollution tracking concept using interactive layers and location markers.</p>
+          <ul class="proj-features">
+            <li>Map UX</li>
+            <li>Layer controls</li>
+            <li>Data visualisation</li>
+          </ul>
+          <div class="tech-row"><span>JavaScript</span><span>Leaflet.js</span><span>APIs</span></div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+
+        <div class="project-card glass reveal" onclick="openModal('modal5')">
+          <div class="project-tag-label">ML</div>
+          <h3>Electricity Prediction</h3>
+          <p>ML project to predict electricity usage and analyse CO₂ impact with a clear report flow.</p>
+          <ul class="proj-features">
+            <li>Predictive modelling</li>
+            <li>CO₂ analysis</li>
+            <li>Insights-focused output</li>
+          </ul>
+          <div class="tech-row"><span>Python</span><span>ML</span><span>Data Analysis</span></div>
+          <div class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+      </div>
+      <div class="exp-grid exp-single">
+        <div class="exp-card glass reveal">
+          <div class="exp-icon"><i class="fab fa-google"></i></div>
+          <div class="exp-body">
+            <div class="exp-top">
+              <h3>GDG on Campus</h3>
+              <span class="exp-badge">Member</span>
+            </div>
+            <p class="exp-org">RIT Sangli &nbsp;·&nbsp; <span class="exp-domain">Web Development</span></p>
+            <p class="exp-desc">Active member of Google Developer Groups on Campus, contributing in the web development domain. Participate in workshops, tech talks, and collaborative developer events organised by the chapter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Education</span>
+        <h2>Academic <span class="accent">Background</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card glass reveal">
+          <div class="edu-year">2024 – Present</div>
+          <h3>B.Tech Computer Science Engineering</h3>
+          <p class="edu-org">Rajarambapu Institute of Technology, Sangli</p>
+          <p class="edu-detail">SY BTech CSE &nbsp;·&nbsp; CGPA: 9.0 (FY)</p>
+        </div>
+        <div class="edu-card glass reveal">
+          <div class="edu-year">2024</div>
+          <h3>HSC (Class XII)</h3>
+          <p class="edu-org">Maharashtra State Board</p>
+          <p class="edu-detail">80.50%</p>
+        </div>
+        <div class="edu-card glass reveal">
+          <div class="edu-year">2022</div>
+          <h3>SSC (Class X)</h3>
+          <p class="edu-org">Maharashtra State Board</p>
+          <p class="edu-detail">93.60%</p>
+        </div>
+      </div>
+      <div class="achievements-block reveal">
+        <h4 class="skills-cat-label" style="margin-bottom:1.2rem;">Achievements</h4>
+        <div class="ach-grid">
+          <div class="ach-item glass"><i class="fas fa-star"></i><span>SSC 93.60%</span></div>
+          <div class="ach-item glass"><i class="fas fa-graduation-cap"></i><span>CGPA 9.0 (FY)</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section class="certs section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Certifications</span>
+        <h2>My <span class="accent">Certifications</span></h2>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass reveal"><div class="cert-icon"><i class="fas fa-certificate"></i></div><div class="cert-info"><h4>Data Science for Beginners</h4><span class="cert-issuer">NASSCOM</span></div><div class="cert-badge">Certified</div></div>
+        <div class="cert-card glass reveal"><div class="cert-icon"><i class="fas fa-robot"></i></div><div class="cert-info"><h4>Acquiring Data — AI Fundamentals</h4><span class="cert-issuer">Online Course</span></div><div class="cert-badge">Completed</div></div>
+        <div class="cert-card glass reveal"><div class="cert-icon"><i class="fab fa-java"></i></div><div class="cert-info"><h4>Core Java Programming</h4><span class="cert-issuer">Infosys Springboard</span></div><div class="cert-badge">Completed</div></div>
+        <div class="cert-card glass reveal"><div class="cert-icon"><i class="fas fa-microchip"></i></div><div class="cert-info"><h4>Digital Electronics</h4><span class="cert-issuer">Infosys Springboard</span></div><div class="cert-badge">Completed</div></div>
+        <div class="cert-card glass reveal"><div class="cert-icon"><i class="fab fa-figma"></i></div><div class="cert-info"><h4>Figma UI/UX Design</h4><span class="cert-issuer">Udemy</span></div><div class="cert-badge">Completed</div></div>
+        <div class="cert-card glass reveal"><div class="cert-icon"><i class="fas fa-globe"></i></div><div class="cert-info"><h4>Responsive Website — HTML &amp; CSS</h4><span class="cert-issuer">Online Course</span></div><div class="cert-badge">Completed</div></div>
+        <div class="cert-card glass reveal"><div class="cert-icon"><i class="fas fa-calculator"></i></div><div class="cert-info"><h4>Symbolic Math with MATLAB</h4><span class="cert-issuer">Online Course</span></div><div class="cert-badge">Completed</div></div>
+        <div class="cert-card glass reveal"><div class="cert-icon"><i class="fas fa-laptop-code"></i></div><div class="cert-info"><h4>Software Engineering</h4><span class="cert-issuer">Infosys Springboard</span></div><div class="cert-badge">Completed</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUME ===== -->
+  <section class="resume-section section">
+    <div class="container">
+      <div class="resume-card glass">
+        <div class="resume-text">
+          <h2>Want to know more?</h2>
+          <p>Download my resume for full details on projects and academic records.</p>
+        </div>
+        <a href="assets/resume.pdf" download class="btn-primary btn-lg"><i class="fas fa-download"></i> Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2>Let's <span class="accent">Connect</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Reach me</h3>
+          <p class="contact-intro">Open to internships and collaborations.</p>
+          <div class="contact-links">
+            <a href="mailto:shrutikakadam3333@gmail.com" class="contact-link glass">
+              <i class="fas fa-envelope"></i>
+              <div><strong>Email</strong><span>shrutikakadam3333@gmail.com</span></div>
+            </a>
+            <a href="tel:+917620703223" class="contact-link glass">
+              <i class="fas fa-phone"></i>
+              <div><strong>Phone</strong><span>+91 76207 03223</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/shrutika-kadam-b983b3327/" target="_blank" class="contact-link glass">
+              <i class="fab fa-linkedin"></i>
+              <div><strong>LinkedIn</strong><span>shrutika-kadam-b983b3327</span></div>
+            </a>
+            <a href="https://github.com/shrutika3223" target="_blank" class="contact-link glass">
+              <i class="fab fa-github"></i>
+              <div><strong>GitHub</strong><span>shrutika3223</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3>Quick message</h3>
+          <p class="contact-intro" style="margin-bottom:1.4rem;">Opens your email app with a prefilled draft.</p>
+          <form class="contact-form glass" onsubmit="handleSubmit(event)">
+            <div class="form-group"><input type="text" id="cName" placeholder="Name" required /></div>
+            <div class="form-group"><input type="email" id="cEmail" placeholder="Email" required /></div>
+            <div class="form-group"><textarea id="cMsg" placeholder="Message" rows="5" required></textarea></div>
+            <button type="submit" class="btn-primary w-full">Open Email Draft <i class="fas fa-envelope"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2025 Shrutika Kadam. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/shrutika3223" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shrutika-kadam-b983b3327/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:shrutikakadam3333@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== MODALS ===== -->
+  <div class="modal-overlay" id="modal1" onclick="closeModal('modal1')">
+    <div class="modal glass" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal1')"><i class="fas fa-times"></i></button>
+      <div class="modal-tag">Maps</div>
+      <h2>EcoTrap</h2>
+      <p>Map-based pollution tracking concept using interactive Leaflet.js layers and location markers. Colour-coded pollution levels on a geographic interface.</p>
+      <div class="modal-features">
+        <div><i class="fas fa-check"></i> Interactive map with custom layer controls</div>
+        <div><i class="fas fa-check"></i> Pollution data visualisation</div>
+        <div><i class="fas fa-check"></i> Location-based filtering and markers</div>
+        <div><i class="fas fa-check"></i> Responsive UI</div>
+      </div>
+      <div class="tech-row"><span>JavaScript</span><span>Leaflet.js</span><span>APIs</span><span>CSS</span></div>
+      <div class="modal-actions"><a href="https://github.com/shrutika3223" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Repo</a></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal4" onclick="closeModal('modal4')">
+    <div class="modal glass" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal4')"><i class="fas fa-times"></i></button>
+      <div class="modal-tag">Web</div>
+      <h2>CampusSwap</h2>
+      <p>A student marketplace platform to buy and sell products within campus. Mobile-first design with Firebase for real-time data sync and authentication.</p>
+      <div class="modal-features">
+        <div><i class="fas fa-check"></i> Firebase Auth + listings flow</div>
+        <div><i class="fas fa-check"></i> Clean, responsive UI</div>
+        <div><i class="fas fa-check"></i> Realtime-ready architecture</div>
+        <div><i class="fas fa-check"></i> Search and filter functionality</div>
+      </div>
+      <div class="tech-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span></div>
+      <div class="modal-actions"><a href="https://github.com/shrutika3223" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Repo</a></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal5" onclick="closeModal('modal5')">
+    <div class="modal glass" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('modal5')"><i class="fas fa-times"></i></button>
+      <div class="modal-tag">ML</div>
+      <h2>Electricity Prediction</h2>
+      <p>ML project predicting electricity usage patterns and analysing CO₂ environmental impact. Structured report flow with data visualisations and insights output.</p>
+      <div class="modal-features">
+        <div><i class="fas fa-check"></i> Predictive modelling with regression</div>
+        <div><i class="fas fa-check"></i> CO₂ impact analysis</div>
+        <div><i class="fas fa-check"></i> Data visualisation charts</div>
+        <div><i class="fas fa-check"></i> Insights-focused report output</div>
+      </div>
+      <div class="tech-row"><span>Python</span><span>ML</span><span>Data Analysis</span><span>Matplotlib</span></div>
+      <div class="modal-actions"><a href="https://github.com/shrutika3223" target="_blank" class="btn-primary"><i class="fab fa-github"></i> Repo</a></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
