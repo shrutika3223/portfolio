@@ -437,3 +437,78 @@ a { color: inherit; text-decoration: none; }
   .ring-outer { width: 188px; height: 188px; }
   .ring-inner { width: 166px; height: 166px; }
 }
+
+/* ===== SKILLS — CURRENTLY LEARNING ===== */
+.skill-learning { flex-direction: row; align-items: center; }
+.skill-learning h5 { margin-bottom: 2px; }
+.learning-badge {
+  font-family: var(--font-mono); font-size: 0.58rem;
+  color: var(--accent2); border: 1px solid rgba(99,102,241,0.35);
+  padding: 0.15rem 0.5rem; border-radius: 4px; display: inline-block;
+}
+
+/* ===== PROJECTS — 2-COLUMN GRID ===== */
+.projects-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.proj-subtitle {
+  font-family: var(--font-mono); font-size: 0.7rem;
+  color: var(--accent2); margin-bottom: 0.7rem; letter-spacing: 0.03em;
+}
+
+/* ===== ACHIEVEMENTS SECTION ===== */
+.achievements { background: var(--bg2); }
+.achievements-grid { display: flex; flex-direction: column; gap: 1.2rem; }
+.achievement-card {
+  border-radius: var(--radius); padding: 2rem 2.4rem;
+  display: flex; align-items: flex-start; gap: 1.8rem;
+  transition: border-color 0.25s;
+}
+.achievement-card:hover { border-color: rgba(0,230,184,0.3); }
+.ach-icon-wrap {
+  font-size: 2.4rem; color: #f59e0b; min-width: 3rem;
+  text-align: center; padding-top: 0.2rem;
+  filter: drop-shadow(0 0 12px rgba(245,158,11,0.4));
+}
+.ach-badge {
+  font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700;
+  color: #f59e0b; background: rgba(245,158,11,0.1);
+  border: 1px solid rgba(245,158,11,0.35); padding: 0.3rem 0.85rem;
+  border-radius: 6px; display: inline-block; margin-bottom: 0.75rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+.ach-body h3 {
+  font-family: var(--font-display); font-size: 1.15rem;
+  font-weight: 700; margin-bottom: 0.65rem; line-height: 1.35;
+}
+.ach-body p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.75; }
+.ach-body em { color: var(--text); font-style: italic; }
+
+/* ===== ACTIVITIES BLOCK (inside Education) ===== */
+.activities-block { margin-top: 2.4rem; }
+.act-card {
+  border-radius: var(--radius); padding: 2rem;
+  display: flex; gap: 1.2rem; max-width: 640px;
+  transition: border-color 0.25s;
+}
+.act-card:hover { border-color: rgba(0,230,184,0.18); }
+.act-icon { font-size: 1.6rem; color: var(--accent); min-width: 2rem; text-align: center; padding-top: 0.1rem; }
+.act-body { flex: 1; }
+.act-top { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 0.3rem; flex-wrap: wrap; }
+.act-top h3 { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; }
+
+/* ===== MODAL NOTE ===== */
+.modal-note {
+  font-family: var(--font-mono); font-size: 0.7rem;
+  color: var(--text-muted); display: flex; align-items: center; gap: 0.45rem;
+  border: 1px dashed var(--border); padding: 0.5rem 0.9rem; border-radius: 6px;
+}
+.modal-note i { color: var(--accent2); }
+
+/* ===== RESPONSIVE UPDATES ===== */
+@media (max-width: 980px) {
+  .projects-grid-2 { grid-template-columns: 1fr; }
+  .achievement-card { flex-direction: column; gap: 1rem; }
+}
+@media (max-width: 640px) {
+  .projects-grid-2 { grid-template-columns: 1fr; }
+  .act-card { flex-direction: column; }
+}
